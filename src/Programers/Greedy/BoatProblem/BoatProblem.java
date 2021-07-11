@@ -1,4 +1,4 @@
-package Greedy;
+package Programers.Greedy.BoatProblem;
 
 
 public class BoatProblem {

@@ -1,7 +1,4 @@
-package Programers;
-
-import java.util.ArrayList;
-import java.util.Stack;
+package Programers.KaKao.CraneGame;
 
 public class CraneGame {
     public int solution(int[][] board, int[] moves) {
