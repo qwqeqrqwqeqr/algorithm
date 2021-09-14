@@ -1,4 +1,4 @@
-package Programers.KaKao.CraneGame;
+package Programers.Kakao.CraneGame;
 
 public class CraneGame {
     public int solution(int[][] board, int[] moves) {

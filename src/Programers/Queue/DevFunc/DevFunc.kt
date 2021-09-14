@@ -30,5 +30,6 @@ class DevFunc {
 
         return answer
     }
+
 }
 

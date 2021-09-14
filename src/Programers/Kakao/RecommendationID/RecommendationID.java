@@ -1,4 +1,4 @@
-package Programers.KaKao.RecommendationID;
+package Programers.Kakao.RecommendationID;
 
 public class RecommendationID {
     public String solution(String new_id) {

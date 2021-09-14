@@ -1,4 +1,4 @@
-package Programers.KaKao.FailureRate;
+package Programers.Kakao.FailureRate;
 
 import java.util.ArrayList;
 
