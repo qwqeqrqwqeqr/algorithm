@@ -9,22 +9,22 @@ class DevFunc {
         var index=0
         var indexTemp=0
         var count=0
-        while(progresses[progresses.lastIndex]>=0) {
+        while(progresses[progresses.lastIndex]>=0) {  //isempty()
             count=0
             index=indexTemp
-            for (i in index..progresses.size - 1) {
+            for (i in index until progresses.size) {
                 progresses[i] += speeds[i]
             }
-            for(i in index..progresses.size-1){
+            for(i in index until progresses.size){
                 if(progresses[i]<100){
                     break
-                }
-                progresses[i] = Int.MIN_VALUE
-                count++
-                indexTemp++
+                } //첫번째부터 배포준비가 안되어있으면 로직을 건너뛴다.
+                progresses[i] = Int.MIN_VALUE //처리완료
+                count++  //처리완료 한 개수
+                indexTemp++  //어디까지 처리했는가
             }
             if(count!=0) {
-                answer.add(count)
+                answer.add(count)   //한번에 answer에 올려버림
             }
         }
 
@@ -32,4 +32,13 @@ class DevFunc {
     }
 
 }
-
+fun main() {
+    val devFunc = DevFunc();
+    var progresses = intArrayOf(93,30,55)
+    var speeds = intArrayOf(1,30,5)
+    var answer : ArrayList<Int> = arrayListOf()
+    answer=devFunc.solution(progresses,speeds)
+    for (i in answer){
+        print(i)
+    }
+}

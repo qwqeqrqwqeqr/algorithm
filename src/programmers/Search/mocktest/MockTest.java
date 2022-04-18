@@ -1,4 +1,4 @@
-package programmers.search.mock_test;
+package programmers.search.mocktest;
 
 import java.util.ArrayList;
 
