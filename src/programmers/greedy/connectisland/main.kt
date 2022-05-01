@@ -1,4 +1,4 @@
-package programmers.greedy.ConnectIsland
+package programmers.greedy.connectisland
 
 fun main() {
     var n : Int = 5

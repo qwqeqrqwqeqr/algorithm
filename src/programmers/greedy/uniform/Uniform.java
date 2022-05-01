@@ -1,4 +1,4 @@
-package programmers.greedy.Uniform;
+package programmers.greedy.uniform;
 
 public class Uniform {
     public int solution(int n, int[] lost, int[] reserve) {

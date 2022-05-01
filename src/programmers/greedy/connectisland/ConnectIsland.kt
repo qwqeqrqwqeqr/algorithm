@@ -1,4 +1,4 @@
-package programmers.greedy.ConnectIsland
+package programmers.greedy.connectisland
 
 import java.util.*
 

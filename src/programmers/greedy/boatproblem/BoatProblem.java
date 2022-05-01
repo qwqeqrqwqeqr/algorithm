@@ -1,4 +1,4 @@
-package programmers.greedy.BoatProblem;
+package programmers.greedy.boatproblem;
 
 
 public class BoatProblem {
