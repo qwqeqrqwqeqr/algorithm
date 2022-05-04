@@ -1,6 +1,6 @@
 package programmers.greedy.uniform;
 
-public class Uniform {
+public class Uniform2 {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n-lost.length;
         for(int i=0; i<lost.length; i++) {
@@ -25,10 +25,10 @@ public class Uniform {
     }
 
     public static void main(String[] args) {
-        Uniform uniform = new Uniform();
+        Uniform2 uniform2 = new Uniform2();
         int n=5;
         int[] lost ={1,2,4,5};
         int[] reverse= {2,3,4};
-        System.out.println(uniform.solution(n,lost,reverse));
+        System.out.println(uniform2.solution(n,lost,reverse));
     }
 }
