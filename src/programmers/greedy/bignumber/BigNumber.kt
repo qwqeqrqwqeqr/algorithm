@@ -70,5 +70,5 @@ fun main() {
     val bigNumber = BigNumber()
     val number = "1231234"
     val k = 3234
-    println(bigNumber.solution2(number, k))
+    println(bigNumber.solution(number, k))
 }
