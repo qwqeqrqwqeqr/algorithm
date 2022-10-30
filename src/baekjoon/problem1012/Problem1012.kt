@@ -13,7 +13,8 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     for (k in 0 until T) {
         val input = readLine().split(" ").map { it.toInt() }
         val node: ArrayList<Pair<Int, Int>> = arrayListOf()
-        val unionTotal: HashSet<HashSet<Pair<Int, Int>>> = hashSetOf<java.util.HashSet<Pair<Int, Int>>>(hashSetOf()).also { it.clear() }
+        val unionTotal: HashSet<HashSet<Pair<Int, Int>>> =
+            hashSetOf<java.util.HashSet<Pair<Int, Int>>>(hashSetOf()).also { it.clear() }
         val queue: Queue<Pair<Int, Int>> = LinkedList()
         repeat(input[2]) {
             val coordinate = readLine().split(" ").map { it.toInt() }
@@ -37,17 +38,16 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
                             union.add(Pair(temp.first + dy[j], temp.second + dx[j]))
                             visited[(node.indexOf(Pair(temp.first + dy[j], temp.second + dx[j])))] = true
                         }
+                    unionTotal.add(union)
                 }
-                unionTotal.add(union)
             }
+            answer.add(unionTotal.size)
         }
-       answer.add(unionTotal.size)
-    }
 
-    answer.forEach {
-        println(it)
+        answer.forEach {
+            println(it)
+        }
     }
-
 
 }
 
