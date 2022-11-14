@@ -5,6 +5,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     var campingList = ArrayList<Triple<Int, Int, Int>>()
     inputData(campingList)
 
+
     campingList.forEachIndexed { index, triple ->
         println("Case ${index + 1}: ${(triple.third / triple.second).toInt() * triple.first + if (triple.first > triple.third % triple.second) triple.third % triple.second else triple.first}")
     }
