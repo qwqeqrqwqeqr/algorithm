@@ -6,7 +6,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
 
     while (true) {
         val input = readLine()
-        if (input == "" || input == null) { break }
+        if (input == "" || input == null) { break }//
         insert(input.toInt(),tree)
     }
 

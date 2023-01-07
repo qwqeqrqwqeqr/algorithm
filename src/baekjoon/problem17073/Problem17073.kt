@@ -19,7 +19,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     }
     val queue: Queue<Int> = LinkedList()
     treeList[1].edge.forEach { queue.add(it) }.also { visited[1]=true }
-
+    queue.clear()
     while (queue.isNotEmpty()){
         val item = queue.poll()
         visited[item] = true
@@ -33,7 +33,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
         }
         if(temp==0){ count++ }
     }
-    println(String.format("%.15f", input[1].toDouble()/count.toDouble()))
+    println(String.format("%.15f", input[1].toDouble()/count.toDouble()))//
 }
 data class EdgeList(var edge: java.util.ArrayList<Int>)
 

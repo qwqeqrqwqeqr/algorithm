@@ -23,15 +23,15 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     treeList[target].edge.clear()
 
     treeList[root].edge.filter { it != target }.forEach { queue.add(it) }
-    if(root==target){
+    if(root==target){ //예외처리
         println(0)
     }
-    else if (queue.size == 0) {
+    else if (queue.size == 0) {  //예외처리
         println(1)
     } else {
         while (queue.isNotEmpty()) {
             val edgeList = treeList[queue.poll()].edge.filter { it != target }
-            if (edgeList.isEmpty()) {
+            if (edgeList.isEmpty()) { //자식어없냐?
                 count += 1
             }
             edgeList.forEach { queue.add(it) }
