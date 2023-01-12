@@ -2,6 +2,13 @@ package baekjoon.problem11725
 
 import java.util.*
 
+var depth = 1;
+var capacity = 1
+var sum = 0;
+var pre = 0;
+var groupID = 0
+var answerIndex = 0
+
 
 /*
 루트노드는 1이다.
