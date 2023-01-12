@@ -1,9 +1,9 @@
 package baekjoon.problem15721
 
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
-    val A = readLine().toInt()
-    val T = readLine().toInt()
-    val flag = readLine().toInt()
+    val A = readLine().trim().toInt()
+    val T = readLine().trim().toInt()
+    val flag = readLine().trim().toInt()
     val answer= when(flag){
         0 -> findFlagZero(findN(T),A,T)
         1 -> findFlagOne(findN(T),A,T)
@@ -23,7 +23,7 @@ fun findFlagZero(n: Int, A: Int, T: Int) :Int{
     }else{
         count += 4 + current-2
     }
-    val target = (findTotal(n)+count)%A-1
+    val target = ((findTotal(n)+count)%A)-1
     if(target== -1){
         return A-1
     }
@@ -51,7 +51,7 @@ fun findFlagOne(n: Int, A: Int, T: Int) :Int{
 fun findTotal(n:Int): Int {
     var temp = 0
     for(i in 1 until n){
-        temp+=4+(n*2)
+        temp+=4+((i+1)*2)
     }
     return temp
 }
