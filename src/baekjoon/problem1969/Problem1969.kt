@@ -6,9 +6,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val arrayList = ArrayList<String>()
     var answerCode = ""
     var answerCount = 0
-    repeat(input[0]) {
-        arrayList.add(readLine())
-    }
+    repeat(input[0]) { arrayList.add(readLine()) }
 
     for (i in 0 until input[1]) {
         var codeList = ArrayList<Code>().also {
