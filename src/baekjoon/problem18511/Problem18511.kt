@@ -12,7 +12,6 @@ package baekjoon.problem18511
 
 657 3
 1 5 7
-
  */
 
 
