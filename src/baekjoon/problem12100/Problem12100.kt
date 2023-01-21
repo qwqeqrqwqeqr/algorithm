@@ -5,7 +5,7 @@ import kotlin.math.max
 val dy = intArrayOf(-1, 0, 1, 0)
 val dx = intArrayOf(0, 1, 0, -1)
 var count = 0
-fun main(args: Array<String>) {
+    fun main(args: Array<String>) {
     val br = System.`in`.bufferedReader()
     val bw = System.`out`.bufferedWriter()
     var N = br.readLine().toInt()

@@ -18,6 +18,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
 fun dfs(depth: Int, array: IntArray){
     if(depth==M){ array.forEach { bufferedWriter.write("$it ") }; bufferedWriter.newLine(); return }
     for(i in 1 .. N){
+
         if(depth!=0){ if(array[depth-1] >= i){ continue } }
         val newArray =array.clone()
         newArray[depth] = i
