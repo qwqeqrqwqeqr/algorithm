@@ -7,6 +7,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val input = readLine().split(" ").map { it.toInt() }
     var chickenList = Array(input[0] + 1) { IntArray(input[1] + 1) { 0 } }
     var visited = BooleanArray(input[1] + 1) { false }
+    var string = Array(3){0}
     repeat(input[0]) {
         readLine().split(" ").map { it.toInt() }.forEachIndexed { index, i ->
             chickenList[it + 1][index + 1] = i
@@ -14,29 +15,29 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     }
     chicken = input[1]
     person = input[0]
-    dfs(chickenList, visited, 0, "", 1)
+    dfs(chickenList, visited, 0,string, 1)
     println(max)
 }
 
-fun dfs(chickenList: Array<IntArray>, visited: BooleanArray, depth: Int, string: String, index: Int) {
+fun dfs(chickenList: Array<IntArray>, visited: BooleanArray, depth: Int, string: Array<Int>, index: Int) {
     if (depth >= 3) {
         var tempSum = 0
         for (i in 1..person) {
-            tempSum += chickenList[i][Character.getNumericValue(string[2])].coerceAtLeast(
-                chickenList[i][Character.getNumericValue(string[0])].coerceAtLeast(
-                    chickenList[i][Character.getNumericValue(string[1])]).coerceAtLeast(
+            tempSum += chickenList[i][string[2]].coerceAtLeast(
+                chickenList[i][string[0]].coerceAtLeast(
+                    chickenList[i][string[1]]).coerceAtLeast(
                     Int.MIN_VALUE
                 )
             )
         }
-        println("$string  : $tempSum")
         max = tempSum.coerceAtLeast(max)
         return
     }
     for (i in index..chicken) {
         if (!visited[i]) {
             visited[i] = true
-            dfs(chickenList, visited, depth + 1, string + i.toString(), i)
+            string[depth] = i
+            dfs(chickenList, visited, depth + 1, string, i)
             visited[i] = false
         }
     }
@@ -44,11 +45,11 @@ fun dfs(chickenList: Array<IntArray>, visited: BooleanArray, depth: Int, string:
 
 /*
 
-4 5
-9 1 1 1 1
-1 9 1 1 1
-1 1 9 1 1
-1 1 1 9 1
+4 10
+9 1 1 1 1 1 1 2 3 3
+1 9 1 1 1 3 3 3 3 3
+1 1 9 1 1 3 3 3 3 3
+1 1 1 9 1 3 4 5 6 7
 
 => 28
 
