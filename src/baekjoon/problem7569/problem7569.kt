@@ -1,94 +1,84 @@
 package baekjoon.problem7569
 
-import java.util.Scanner
-import java.util.*
+import java.util.LinkedList
+import java.util.Queue
 import kotlin.collections.ArrayList
 
 
-val dx = intArrayOf(0, 1, 0, -1)
-val dy = intArrayOf(-1, 0, 1, 0)
+val dx = intArrayOf(0, 1, 0, -1, 0, 0)
+val dy = intArrayOf(-1, 0, 1, 0, 0, 0)
+val dz = intArrayOf(0, 0, 0, 0, -1, 1)
 var M: Int = 0
 var N: Int = 0
 var H: Int = 0
+var depth = 0
 
-fun main(args: Array<String>) = with(Scanner(System.`in`)) {
-    M = nextInt() //행
-    N = nextInt() //열
-    H = nextInt()
-    nextLine()
-//    val tomatoList: ArrayList<ArrayList<java.util.ArrayList<Int>>> = arrayListOf(arrayListOf())
-//    val queue: Queue<Coordinate> = LinkedList<Coordinate>();
-//    val tempList : ArrayList<Coordinate> = arrayListOf()
-//    var day :Int =0
-//
-//    for (i in 1 ..  N) {
-//        val tempArray = arrayListOf<Int>()
-//        for (j in 0 until M) {
-//            for(k in 0 )
-//            val tomato = nextInt()
-//            if (tomato == 1) {
-//                queue.offer(Coordinate(i, j))
-//            }
-//            tempArray.add(tomato)
-//        }
-//        tomatoList.add(tempArray)
-//    }
-//
-//    while (!queue.isEmpty() || tempList.isNotEmpty()) {
-//        if(queue.isEmpty()){
-//            tempList.forEach { queue.offer(Coordinate(it.y,it.x))  }
-//            day+=1
-//            tempList.clear()
-//        }
-//
-//        val tomatoCoordinate = queue.poll();
-//        check(tomatoList,tempList ,tomatoCoordinate.y, tomatoCoordinate.x)
-//    }
-//
-//
-//    if(checkNotVisited(tomatoList)){
-//        println("-1")
-//    }else{
-//        println(day)
-//    }
+fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+    readLine().split(" ").map { it.toInt() }.apply {
+        M = this[0];N = this[1];H = this[2]
+    }
+    val map = Array(H + 1) { Array(N + 1) { IntArray(M + 1) { 0 } } }
+    val visited = Array(H + 1) { Array(N + 1) { BooleanArray(M + 1) { false } } }
+    val tomatoList: ArrayList<Coordinate> = ArrayList()
 
-
-}
-fun checkNotVisited(tomatoList: ArrayList<java.util.ArrayList<Int>>):Boolean{
-    tomatoList.forEach {
-        it.forEach { if(it==0)
-            return true
+    for (z in 1..H) {
+        for (y in 1..N) {
+            readLine().split(" ").map { it.toInt() }.forEachIndexed { index, x ->
+                map[z][y][index + 1] = x
+                if (x == 1) tomatoList.add(Coordinate(z, y, index + 1))
+            }
         }
     }
-    return false
+    dfs(visited, tomatoList, map)
+    if (checkList(map)) {
+        println(depth)
+    } else {
+        println(-1)
+    }
 }
 
-data class Coordinate(val h : Int, val y: Int, val x: Int)
-
-fun checkBound(y: Int, x: Int): Boolean {
-    return (0 <= x && 0 < y && x < M && y <= N)
+fun dfs(visited: Array<Array<BooleanArray>>, tomatoList: ArrayList<Coordinate>, map: Array<Array<IntArray>>) {
+    val queue: Queue<Coordinate> = LinkedList()
+    tomatoList.forEach { queue.add(it) }.also { tomatoList.clear() }
+    while (queue.isNotEmpty()) {
+        val item = queue.poll()
+        if (!visited[item.z][item.y][item.x]) {
+            visited[item.z][item.y][item.x] = true
+            for (i in 0 until 6) {
+                if (checkBound(
+                        dz[i] + item.z,
+                        dy[i] + item.y,
+                        dx[i] + item.x
+                    ) && map[dz[i] + item.z][dy[i] + item.y][dx[i] + item.x] == 0 && !visited[dz[i] + item.z][dy[i] + item.y][dx[i] + item.x]
+                ) {
+                    map[dz[i] + item.z][dy[i] + item.y][dx[i] + item.x] = 1
+                    tomatoList.add(Coordinate(dz[i] + item.z, dy[i] + item.y, dx[i] + item.x))
+                }
+            }
+        }
+    }
+    if (tomatoList.isEmpty()) { return }
+    depth += 1
+    dfs(visited, tomatoList, map)
 }
 
-//fun check(tomatoList: ArrayList<java.util.ArrayList<Int>>,tempList : ArrayList<Coordinate>, y: Int, x: Int) {
-//    for (i in 0..3) {
-//        if ( checkBound(y + dy[i], x + dx[i]) ) {
-//            if(tomatoList[y + dy[i]][x + dx[i]] == 0) {
-//                tomatoList[y + dy[i]][x + dx[i]] = 1;
-//                tempList.add(Coordinate(y + dy[i], x + dx[i]))
-//            }
-//        }
-//    }
-//}
-
-// 넓이 우선탐색으로 한층씩 깊어지는게 하루일것이다.
-// 상하좌우에 있는 것들을 queue에 포함시킴 이때 0인것들만 포함한다
-// 최종적으로 queue가 비면 마무리
+fun checkList(map: Array<Array<IntArray>>): Boolean {
+    for (z in 1..H) {
+        for (y in 1..N) {
+            for (x in 1..M) {
+                if(map[z][y][x]==0){
+                    return false
+                }
+            }
+        }
+    }
+    return true
+}
 
 
-//배열 검사코드
-//tomatoList.forEach {
-//    it.forEach {
-//        print("$it ")
-//    }
-//    println()
-//}
+data class Coordinate(val z: Int, val y: Int, val x: Int)
+
+fun checkBound(z: Int, y: Int, x: Int): Boolean {
+    return (1 <= x && 1 <= y && 1 <= z && x <= M && y <= N && z <= H)
+}
+

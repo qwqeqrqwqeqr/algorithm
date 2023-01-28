@@ -74,9 +74,7 @@ fun check(tomatoList: ArrayList<java.util.ArrayList<Int>>,tempList : ArrayList<C
     }
 }
 
-// 넓이 우선탐색으로 한층씩 깊어지는게 하루일것이다.
-// 상하좌우에 있는 것들을 queue에 포함시킴 이때 0인것들만 포함한다
-// 최종적으로 queue가 비면 마무리
+
 
 
 //배열 검사코드
