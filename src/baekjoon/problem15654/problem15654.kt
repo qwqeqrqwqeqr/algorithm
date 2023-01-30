@@ -16,12 +16,12 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     }
     m = M; n = N
 
-    dfs(visited,array, arrayListOf())
+    dfs(visited, array, arrayListOf())
     bufferedWriter.flush()
 }
 
 fun dfs(visited: BooleanArray, array: IntArray, depth: ArrayList<Int>) {
-    if(depth.size>=m){
+    if(depth.size>= m){
         bufferedWriter.append(depth.joinToString(" ")+"\n")
         return
     }
@@ -29,7 +29,7 @@ fun dfs(visited: BooleanArray, array: IntArray, depth: ArrayList<Int>) {
         if(!visited[i]){
             visited[i]=true
             depth.add(array[i])
-            dfs(visited,array,depth)
+            dfs(visited, array, depth)
             depth.remove(array[i])
             visited[i]=false
         }
