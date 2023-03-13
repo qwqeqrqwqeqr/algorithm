@@ -6,8 +6,7 @@ import java.io.OutputStreamWriter
 val bufferedWriter = BufferedWriter(OutputStreamWriter(System.out))
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     repeat(readLine().toInt()) {
-        var game1 = Int.MAX_VALUE;
-        var game2 = Int.MIN_VALUE
+        var game1 = Int.MAX_VALUE; var game2 = Int.MIN_VALUE
         val target = readLine()
         val K = readLine().toInt()
         target.groupBy { it }.filter { it.value.size >= K }.forEach { key ->
