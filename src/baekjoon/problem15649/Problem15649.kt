@@ -6,6 +6,7 @@ import java.io.OutputStreamWriter
 var N =0
 var M =0
 val bufferedWriter = BufferedWriter(OutputStreamWriter(System.out))
+
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val input = readLine().split(" ").map { it.toInt() }.toList()
 
@@ -32,3 +33,4 @@ fun checkDuplication(depth:Int, array: IntArray, target: Int) :Boolean{
     }
     return false
 }
+
