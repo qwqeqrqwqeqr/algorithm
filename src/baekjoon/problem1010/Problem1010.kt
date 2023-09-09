@@ -16,7 +16,11 @@ fun main(args: Array<String>): Unit = with(System.`in`.bufferedReader()) {
 
 fun combinationCount(dp: Array<IntArray>, n: Int, r: Int): Int {
     if (r == 0 || n == r) return 1
-    if (dp[n][r] == -1) dp[n][r] = combinationCount(dp, n - 1, r - 1) + combinationCount(dp, n - 1, r)
+    if (dp[n][r] == -1) dp[n][r] = combinationCount(
+        dp,
+        n - 1,
+        r - 1
+    ) + combinationCount(dp, n - 1, r)
     return dp[n][r]
 }
 
