@@ -34,7 +34,7 @@ class Travel {
                     var string2:StringBuilder = java.lang.StringBuilder()
                     stack.forEach { string1.append(it) }
                     answer.forEach { string2.append(it) }
-                    if(string1<string2){
+                    if(string1 < string2){
                         answer.clear()
                         stack.forEach { answer.add(it) }
                     }

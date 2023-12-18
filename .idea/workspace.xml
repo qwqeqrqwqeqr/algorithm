@@ -4,243 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65bc7520-b1bd-48a7-bfbb-b0fb91c67c71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/Problem2503/Problem2503.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/baekjoon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1000/Problem1000.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1001/Problem1001.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10026/Problem10026.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1008/Problem1008.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1009/Problem1009.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1010/Problem1010.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1011/Problem1011.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1012/Problem1012.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1018/Problem1018.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1021/Problem1021.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10451/Problem10451.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10472/Problem10472.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1062/Problem1062.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1063/Problem1063.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1068/Problem1068.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10699/Problem10699.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10773/Problem10773.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10814/Problem10814.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10815/Problem10815.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10816/Problem10816.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10828/Problem10828.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10845/Problem10845.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1092/Problem1092.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem10986/Problem10986.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11000/Problem11000.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11047/Problem11047.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1107/Problem1107.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11279/Problem11279.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11286/Problem11286.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11399/Problem11399.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11403/Problem11403.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1152/Problem1152.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11650/Problem11650.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11651/Problem11651.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11659/Problem11659.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11660/Problem11660.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11723/Problem11723.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11724/Problem11724.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11725/Problem11725.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11726/Problem11726.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11758/Problem11758.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1181/Problem1181.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem11866/Problem11866.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1193/Problem1193.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem12100/Problem12100.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1240/Problem1240.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1254/Problem1254.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1260/Problem1260.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem12845/Problem12845.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem12865/Problem12865.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem12904/Problem12904.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem12919/Problem12919.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1316/Problem1316.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem13164/Problem13614.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1325/Problem1325.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1330/Problem1330.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem13458/Problem13458.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem13549/Problem13549.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1411/Problem1411.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1422/Problem1422.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem14225/Problem14225.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1427/Problem1427.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1436/Problem1436.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1449/Problem1449.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem14501/Problem14501.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem14502/Problem14502.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1463/Problem1463.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem14675/Problem14675.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem14888/Problem14888.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem14891/Problem14891.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1503/Problem1503.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1527/Problem1527.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1541/Problem1541.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15649/Problem15649.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15650/Problem15650.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15651/Problem15651.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15652/Problem15652.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15654/problem15654.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15655/Problem15655.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15656/Problem15656.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15657/Problem15657.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15663/problem15663.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15664/problem15664.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15686/Problem15686.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15721/Problem15721.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15728/Problem15728.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1581/Problem1581.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem15964/Problem15964.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1620/Problem1620.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem16234/Problem16234.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem16439/Problem16439.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1676/Problem1676.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem16928/Problem16928.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem16937/Problem16937.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem16943/Problem16943.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1697/Problem1697.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17073/Problem17073.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1708/Problem1708.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17086/Problem17086.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17219/Problem17219.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1747/Problem1747.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17484/Problem17484.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1749/Problem1749.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1759/Problem1759.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17609/Problem17609.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17610/Problem17610.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17626/Problem17626.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem17836/Problem17836.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem18110/Problem18110.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem18511/Problem18511.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem18870/Problem18870.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1920/Problem1920.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1927/Problem1927.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1931/Problem1931.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1932/Problem1932.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1956/Problem1956.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem19598/Problem19598.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1967/Problem1967.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1969/Problem1969.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1978/Problem1978.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem1991/Problem1991.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem19949/Problem19949.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2015/Problem2015.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem20210/Problem20210.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem20291/Problem20291.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem20365/Problem20365.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem20437/Problem20437.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem20438/Problem20438.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem20440/Problem20440.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem21318/Problem21318.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2164/Problem2164.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem21736/Problem21736.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2178/Problem2178.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2212/Problem2212.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2217/Problem2217.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2225/Problem2225.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2293/Problem2293.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2304/Problem2304.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2422/Problem2422.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2437/Problem2437.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2468/Problem2468.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2475/Problem2475.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem25083/Problem25083.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2557/Problem2557.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2580/Problem2580.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2630/Problem2630.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2636/Problem2636.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2644/Problem2644.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2661/Probelm2661.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2667/Problem2667.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem27866/Problem27866.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2839/Problem2839.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2869/Problem2869.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2884/Problem2884.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2941/Problem2941.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem2980/Problem2980.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem3085/Problem3085.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem3584/Problem3584.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem4256/Problem4256.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem4659/Problem4659.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem4796/Problem4796.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem4949/Problem4949.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem5430/Problem5430.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem5547/Problem5547.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem5567/Problem5567.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem5568/Problem5568.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem5639/Problem5639.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem6550/Problem6550.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem7569/problem7569.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem7576/Problem7576.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem8979/Problem8979.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9086/Problem9086.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9095/Problem9095.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9342/Problem9342.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9489/Problem9489.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9655/Problem9655.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9663/Problem9663.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9934/Problem9934.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/problem9996/Problem9996.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dynamicprogramming/presentationn/presentationN.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dynamicprogramming/triangle/IntegerTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dynamicprogramming/waytoschool/WayToSchool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kakao/test2023/problem1/Problem1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kakao/test2023/problem3/Problem3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Hash/book/TelBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Hash/disguise/Disguise.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Hash/participant/Participant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Queue/dev_func/DevFunc.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Queue/prices/Prices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Queue/printer/Printer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Queue/truck/Truck.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Search/carpet/Carpet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Search/mocktest/MockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Search/mocktest/Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/Search/primenumber/PrimeNumber.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/binarysearch/bridge/Bridge.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/binarysearch/immigration/Immigration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/ect/Budget/Budget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/ect/CountriesOf124/CountriesOf124.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/ect/Rectangle/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/firstsearch/network/Network.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/firstsearch/targetnumber/TargetNumber.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/firstsearch/travel/Travel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/graph/node/Node.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/graph/ranking/Ranking.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/bignumber/BigNumber.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/bignumber/BigNumber2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/bignumber/BigNumber3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/boatproblem/BoatProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/camera/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/connectisland/ConnectIsland.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/connectisland/Island.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/joystick/JoyStick.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/uniform/Uniform.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/greedy/uniform/Uniform2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/heap/disk/Disk.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/heap/priorityqueue/PriorityQueue.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/heap/scoville/Scoville.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/crane_game/CraneGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/failure_rate/FailureRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/parentheses_conversion/ParenthesesConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/recommendation_id/RecommendationID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/tuple/Tuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/sort/BiggestNumber.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/sort/BiggestNumber2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/sort/H_Index.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/sort/k_number/K_Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wanted/showmethecode20230114/round1/Round1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wanted/showmethecode20230114/round2/Round2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wanted/showmethecode20230114/round3/Round3.kt" afterDir="false" />
+    <list default="true" id="37165490-1a48-4039-bba0-8bfdacb5fd6c" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/travel/Travel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/travel/Travel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/greedy/connectisland/Island.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programmers/greedy/connectisland/Island.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/sort/H_Index.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programmers/sort/H_Index.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,21 +21,6 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
-    <projectState path="$PROJECT_DIR$/algorith">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -274,54 +29,77 @@
   "customColor": "",
   "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2ZiUppi0L7iqr79b0c3O6rNWk0l" />
+  <component name="ProjectId" id="2ZiVzpGXKpX3XXEulhVuBJzpWQE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "jbr-17",
-    "last_opened_file_path": "/Users/sangtaek/Study/algorithm",
+    "last_opened_file_path": "/Users/sangtaek/Study/algorithm/src/main/kotlin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Problem1001Kt">
+    <configuration name="Problem1000Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.problem1000.Problem1000Kt" />
+      <module name="algorithm.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem1001Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.problem1001.Problem1001Kt" />
+      <module name="algorithm.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.Problem1001Kt" />
+        <item itemvalue="Kotlin.Problem1000Kt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="65bc7520-b1bd-48a7-bfbb-b0fb91c67c71" name="Changes" comment="" />
-      <created>1702904580515</created>
+      <changelist id="37165490-1a48-4039-bba0-8bfdacb5fd6c" name="Changes" comment="" />
+      <created>1702905154938</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1702904580515</updated>
-      <workItem from="1702904581634" duration="581000" />
+      <updated>1702905154938</updated>
+      <workItem from="1702905156237" duration="616000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1702905623849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702905623849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
