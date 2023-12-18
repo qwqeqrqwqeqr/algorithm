@@ -1,0 +1,152 @@
+Index: src/main/kotlin/programmers/firstsearch/travel/Travel.kt
+===================================================================
+diff --git a/src/main/kotlin/programmers/firstsearch/travel/Travel.kt b/src/main/kotlin/programmers/firstsearch/travel/Travel.kt
+deleted file mode 100644
+--- a/src/main/kotlin/programmers/firstsearch/travel/Travel.kt	(revision 699278405178ebfba153bba677e2864b4ee144ab)
++++ /dev/null	(revision 699278405178ebfba153bba677e2864b4ee144ab)
+@@ -1,58 +0,0 @@
+-package programmers.firstsearch.travel
+-
+-import java.util.*
+-import kotlin.collections.ArrayList
+-
+-
+-class Travel {
+-    fun solution(tickets: Array<Array<String>>): ArrayList<String> {
+-        val ticket: ArrayList<Ticket> = ArrayList()
+-        var stack: Stack<String> = Stack()
+-        var answer:ArrayList<String> = ArrayList()
+-        tickets.forEach { ticket.add(Ticket(it[0], it[1])) }
+-
+-        //모든 순열을 구해서 모든 경우의수에 대해서 판단함
+-        permutation(ticket.toList()).forEach  run@{
+-            println(it)
+-            stack.clear()
+-            //여행순서를 만들어내는 로직 만약 순서가 어긋날경우 continue 시킴
+-            it.forEach{
+-                if(stack.isEmpty()){stack.add(it.start); stack.add(it.destination)} else{
+-                    if (stack.pop() != it.start) {
+-                        stack.clear(); return@run
+-                    } else{ stack.add(it.start); stack.add(it.destination) }
+-                }
+-            }
+-
+-            //대소를 비교하는 구문
+-            if(stack.isNotEmpty()){
+-                if(answer.isEmpty()){
+-                    stack.forEach { answer.add(it) }
+-                }
+-                else{
+-                    var string1:StringBuilder = java.lang.StringBuilder()
+-                    var string2:StringBuilder = java.lang.StringBuilder()
+-                    stack.forEach { string1.append(it) }
+-                    answer.forEach { string2.append(it) }
+-                    if(string1 < string2){
+-                        answer.clear()
+-                        stack.forEach { answer.add(it) }
+-                    }
+-                }
+-            }
+-        }
+-        return answer
+-    }
+-
+-    private fun <T> permutation(el: List<T>, fin: List<T> = listOf(), sub: List<T> = el): List<List<T>> {
+-        return if (sub.isEmpty()) listOf(fin)
+-        else sub.flatMap { permutation(el, fin + it, sub - it) }
+-    }
+-    data class Ticket(val start: String, val destination: String)
+-}
+-
+-fun main() {
+-    val travel = Travel()
+-    val tickets = arrayOf(arrayOf("ICN", "SFO"), arrayOf("ICN", "ATL"), arrayOf("SFO", "ATL"), arrayOf("ATL", "ICN"), arrayOf("ATL","SFO"))
+-    println(travel.solution(tickets))
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"37165490-1a48-4039-bba0-8bfdacb5fd6c\" name=\"Changes\" comment=\"init\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/vcs.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/travel/Travel.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/travel/Travel.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/programmers/greedy/connectisland/Island.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/programmers/greedy/connectisland/Island.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/programmers/sort/H_Index.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/programmers/sort/H_Index.kt\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"customColor\": \"\",\n  \"associatedIndex\": 4\n}]]></component>\n  <component name=\"ProjectId\" id=\"2ZiVzpGXKpX3XXEulhVuBJzpWQE\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"last_opened_file_path\": \"/Users/sangtaek/Study/algorithm/src/main/kotlin\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/kotlin\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Kotlin.Problem1001Kt\">\n    <configuration name=\"Problem1000Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"baekjoon.problem1000.Problem1000Kt\" />\n      <module name=\"algorithm.main\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Problem1001Kt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"baekjoon.problem1001.Problem1001Kt\" />\n      <module name=\"algorithm.main\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Kotlin.Problem1001Kt\" />\n        <item itemvalue=\"Kotlin.Problem1000Kt\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"37165490-1a48-4039-bba0-8bfdacb5fd6c\" name=\"Changes\" comment=\"\" />\n      <created>1702905154938</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702905154938</updated>\n      <workItem from=\"1702905156237\" duration=\"616000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"init\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702905623849</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702905623849</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"init\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"init\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 699278405178ebfba153bba677e2864b4ee144ab)
++++ b/.idea/workspace.xml	(date 1702906546493)
+@@ -5,12 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="37165490-1a48-4039-bba0-8bfdacb5fd6c" name="Changes" comment="init">
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/travel/Travel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/travel/Travel.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/greedy/connectisland/Island.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programmers/greedy/connectisland/Island.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/sort/H_Index.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programmers/sort/H_Index.kt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/network/Network.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/network/Network.kt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programmers/firstsearch/travel/Travel.kt" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -52,7 +49,7 @@
+       <recent name="$PROJECT_DIR$/src/main/kotlin" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Kotlin.Problem1001Kt">
++  <component name="RunManager" selected="Kotlin.Problem1000Kt">
+     <configuration name="Problem1000Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="baekjoon.problem1000.Problem1000Kt" />
+       <module name="algorithm.main" />
+@@ -69,8 +66,8 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Kotlin.Problem1001Kt" />
+         <item itemvalue="Kotlin.Problem1000Kt" />
++        <item itemvalue="Kotlin.Problem1001Kt" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -82,7 +79,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1702905154938</updated>
+-      <workItem from="1702905156237" duration="616000" />
++      <workItem from="1702905156237" duration="1364000" />
+     </task>
+     <task id="LOCAL-00001" summary="init">
+       <option name="closed" value="true" />
+@@ -92,7 +89,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1702905623849</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="init">
++      <option name="closed" value="true" />
++      <created>1702905900302</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1702905900302</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: src/main/kotlin/programmers/firstsearch/network/Network.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package programmers.firstsearch.network\n\nimport programmers.firstsearch.travel.Travel\n\nclass Network {\n    fun solution(n: Int, computers: Array<IntArray>): Int {\n        var answer = 0\n\n        return answer\n    }\n}\n\nfun main() {\n    val network = Network()\n    val n = 3\n    val computers = arrayOf(intArrayOf(1,1,0), intArrayOf(1,1,0), intArrayOf(0,0,1))\n    println(network.solution(n,computers))\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/programmers/firstsearch/network/Network.kt b/src/main/kotlin/programmers/firstsearch/network/Network.kt
+--- a/src/main/kotlin/programmers/firstsearch/network/Network.kt	(revision 699278405178ebfba153bba677e2864b4ee144ab)
++++ b/src/main/kotlin/programmers/firstsearch/network/Network.kt	(date 1702905957919)
+@@ -1,6 +1,5 @@
+ package programmers.firstsearch.network
+ 
+-import programmers.firstsearch.travel.Travel
+ 
+ class Network {
+     fun solution(n: Int, computers: Array<IntArray>): Int {
