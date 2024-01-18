@@ -42,3 +42,8 @@ bin/
 .DS_Store
 
 .idea
+
+
+./src/main/kotlin/programmers/test/*
+./src/main/kotlin/programmers/test1/*
+./src/main/kotlin/programmers/test2/*
