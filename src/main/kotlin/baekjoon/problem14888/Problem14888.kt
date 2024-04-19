@@ -1,46 +1,65 @@
+import baekjoon.problem21736.N
 import java.util.*
-import kotlin.collections.ArrayList
 
 
-fun add(x: Int, y: Int): Int = x + y
-fun sub(x: Int, y: Int): Int = x - y
-fun mul(x: Int, y: Int): Int = x * y
-fun div(x: Int, y: Int): Int = x / y
+val add: (Int, Int) -> Int = { x, y -> x + y }
+val sub: (Int, Int) -> Int = { x, y -> x - y }
+val mul: (Int, Int) -> Int = { x, y -> x * y }
+val div: (Int, Int) -> Int = { x, y -> x / y }
 
-var max: Int = -1000000000
-var min: Int = 100000000
-val numberList = ArrayList<Int>()
-val operatorList = ArrayList<Int>()
-fun main(args: Array<String>) = with(Scanner(System.`in`)) {
-    val N = nextInt() //개수
-    for (i in 0 until N) {
-        numberList.add(nextInt())
+var max: Int = Int.MIN_VALUE
+var min: Int = Int.MAX_VALUE
+
+val opList = arrayOf<(Int, Int) -> Int>(add, sub, mul, div)
+
+fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+    val N = readLine().toInt()
+    val opArray = IntArray(4)
+    val array = IntArray(N)
+    val visited = BooleanArray(N) { false }
+    readLine().split(" ").map { it.toInt() }.forEachIndexed { index, i -> array[index] = i }
+    readLine().split(" ").map { it.toInt() }.forEachIndexed { index, i -> opArray[index] = i }
+
+    for (i in array.indices) {
+        visited[i] = true
+        backtracking(array[i], opArray, array, visited, N, 1)
+        visited[i] = false
     }
-    nextLine()
-    for (i in 0 until 4) {
-        operatorList.add(nextInt())
-    }
-    dfs(1,numberList[0])
+
     println(max)
     println(min)
 }
 
-
-fun dfs(index: Int, current: Int) {
-    if (index == numberList.size) {
-        max = Math.max(max, current)
-        min = Math.min(min, current)
-    } else {
-        for (i in 0..3)
-            if (operatorList[i] > 0) {
-                operatorList[i]--
-                when (i) {
-                    0 -> dfs(index + 1, add(current, numberList[index]))
-                    1 -> dfs(index + 1, sub(current, numberList[index]))
-                    2 -> dfs(index + 1, mul(current, numberList[index]))
-                    3 -> dfs(index + 1, div(current, numberList[index]))
+fun backtracking(value: Int, opArray: IntArray, array: IntArray, visited: BooleanArray, N: Int, depth: Int) {
+    if (depth == N) {
+        max = Math.max(value, max)
+        min = Math.min(value, min)
+        return
+    }
+    for (i in array.indices) {
+        if (!visited[i]) {
+            visited[i] = true
+            if(opArray[2]!=0 || opArray[3]!=0){
+                for (j in 2 .. 3) {
+                    if (opArray[j] > 0) {
+                        opArray[j] = opArray[j] - 1
+                        backtracking(opList[j](value, array[i]), opArray, array, visited, N, depth + 1)
+                        opArray[j] = opArray[j] + 1
+                    }
                 }
-                operatorList[i]++
             }
+            else{
+                for (j in 0 ..1) {
+                    if (opArray[j] > 0) {
+                        opArray[j] = opArray[j] - 1
+                        backtracking(opList[j](value, array[i]), opArray, array, visited, N, depth + 1)
+                        opArray[j] = opArray[j] + 1
+                    }
+                }
+            }
+
+            visited[i] = false
+        }
     }
 }
+
