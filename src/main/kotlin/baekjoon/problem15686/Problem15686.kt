@@ -2,51 +2,42 @@ package baekjoon.problem15686
 
 import kotlin.math.abs
 
-var min = 999999
+val chickenList = ArrayList<Pair<Int, Int>>()
+val houseSet = HashSet<Pair<Int, Int>>()
+val visited = BooleanArray(13) { false }
+var min = Int.MAX_VALUE
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
-    val map: ArrayList<java.util.ArrayList<Int>> = arrayListOf(arrayListOf())
-    val chickenHouse = ArrayList<Pair<Int, Int>>()
-    val house = ArrayList<Pair<Int, Int>>()
-    val input = readLine().split(" ").map { it.toInt() }
-    for( i in 0 until  input[0]) {
-        map.add(readLine().split(" ").map { it.toInt() }.toList().also {
-            it.forEachIndexed { index, j ->
-                when (j) {
-                    1 -> house.add(Pair(i, index))
-                    2 -> chickenHouse.add(Pair(i, index))
-                }
-            }
-        } as java.util.ArrayList<Int>)
-    }
-    dfs(house, chickenHouse, input[1])
+    val (n, m) = readLine().split(" ").map { it.toInt() }
 
+    repeat(n) { row ->
+        readLine().split(" ").map { it.toInt() }.forEachIndexed { column, value ->
+            when (value) {
+                1 -> houseSet.add(row to column)
+                2 -> chickenList.add(row to column)
+                else -> {}
+            }
+        }
+    }
+
+    dfs(visited, m, 0, 0)
     println(min)
 }
 
-fun dfs(house: ArrayList<Pair<Int, Int>>, chickenHouse: ArrayList<Pair<Int, Int>>, M: Int) {
-    if (chickenHouse.size == M) {
-        min = Math.min(getMinDistanceTotal(house, chickenHouse), min)
+
+fun dfs(visited: BooleanArray, m: Int, start: Int, depth: Int) {
+    if (depth == m) {
+        val filteredList = chickenList.filterIndexed { index, _ -> visited[index] }
+        min = houseSet.sumOf { house ->
+            filteredList.minOf { abs(it.first - house.first) + abs(it.second - house.second) }
+        }.coerceAtMost(min)
         return
-    } else {
-        for(i in 0 until  chickenHouse.size){
-            val temp : ArrayList<Pair<Int, Int>>  = chickenHouse.clone() as ArrayList<Pair<Int, Int>>
-            temp.removeAt(i)
-            dfs(house,temp,M)
+    }
+    for (i in start until chickenList.size) {
+        if (!visited[i]) {
+            visited[i] = true
+            dfs(visited, m, i+1,depth + 1)
+            visited[i] = false
         }
     }
 }
 
-//visited[] =
-//i+1
-
-fun getMinDistanceTotal(house: ArrayList<Pair<Int, Int>>, chickenHouse: ArrayList<Pair<Int, Int>>): Int {
-    var minDistanceTotal = 0
-    house.forEach { h ->
-        var minDistance = 100000
-        chickenHouse.forEach { c ->
-            minDistance = Math.min(minDistance, abs(h.first - c.first) + abs((h.second - c.second)))
-        }
-        minDistanceTotal += minDistance
-    }
-    return minDistanceTotal
-}
